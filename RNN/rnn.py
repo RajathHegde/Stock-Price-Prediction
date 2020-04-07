@@ -1,6 +1,6 @@
 # Recurrent Neural Network
 
-# Part 1 - Data Preprocessing
+# Data Preprocessing
 
 # Importing the libraries
 import numpy as np
@@ -27,9 +27,7 @@ X_train, y_train = np.array(X_train), np.array(y_train)
 # Reshaping
 X_train = np.reshape(X_train, (X_train.shape[0], X_train.shape[1], 1))
 
-
-
-# Part 2 - Building the RNN
+# Building the RNN
 
 # Importing the Keras libraries and packages
 from keras.models import Sequential
@@ -67,7 +65,7 @@ regressor.fit(X_train, y_train, epochs = 100, batch_size = 32)
 
 
 
-# Part 3 - Making the predictions and visualising the results
+# Making the predictions and visualising the results
 
 # Getting the real stock price of 2017
 dataset_test = pd.read_csv('Google_Stock_Price_Test.csv')
